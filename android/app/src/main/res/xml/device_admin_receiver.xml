@@ -1,0 +1,31 @@
+<device-admin xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Enable/disable camera -->
+    <camera disabled="false" />
+
+    <!-- Enable/disable screen capture -->
+    <screen-capture disabled="false" />
+
+    <!-- Enable/disable factory reset -->
+    <disable-factory-reset disabled="false" />
+
+    <!-- Password policies -->
+    <password-policy>
+        <minimum-length value="6" />
+        <minimum-letters value="1" />
+        <minimum-non-letters value="1" />
+        <minimum-numeric value="1" />
+        <minimum-symbols value="0" />
+        <expiration-time value="0" />
+        <maximum-failed-passwords value="5" />
+        <complexity value="0" />
+        <non-letter-numeric value="0" />
+    </password-policy>
+
+    <!-- Maximum time of inactivity before screen lock -->
+    <maximum-time-to-lock value="300000" />
+
+    <!-- Lock the device immediately when the screen turns off -->
+    <require-lock-immediately />
+
+</device-admin>
